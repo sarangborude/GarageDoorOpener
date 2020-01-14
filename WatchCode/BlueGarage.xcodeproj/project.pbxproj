@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2759A258233AB79E00ECB3F1 /* BlueGarage WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2759A257233AB79E00ECB3F1 /* BlueGarage WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2759A25E233AB79E00ECB3F1 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2759A25C233AB79E00ECB3F1 /* Interface.storyboard */; };
+		2759A260233AB79F00ECB3F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2759A25F233AB79F00ECB3F1 /* Assets.xcassets */; };
+		2759A267233AB79F00ECB3F1 /* BlueGarage WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2759A266233AB79F00ECB3F1 /* BlueGarage WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2759A26C233AB79F00ECB3F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2759A26B233AB79F00ECB3F1 /* ContentView.swift */; };
+		2759A26E233AB79F00ECB3F1 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2759A26D233AB79F00ECB3F1 /* HostingController.swift */; };
+		2759A270233AB79F00ECB3F1 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2759A26F233AB79F00ECB3F1 /* ExtensionDelegate.swift */; };
+		2759A272233AB79F00ECB3F1 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2759A271233AB79F00ECB3F1 /* NotificationController.swift */; };
+		2759A274233AB79F00ECB3F1 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2759A273233AB79F00ECB3F1 /* NotificationView.swift */; };
+		2759A276233AB79F00ECB3F1 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2759A275233AB79F00ECB3F1 /* ComplicationController.swift */; };
+		2759A278233AB7A000ECB3F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2759A277233AB7A000ECB3F1 /* Assets.xcassets */; };
+		2759A27B233AB7A000ECB3F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2759A27A233AB7A000ECB3F1 /* Preview Assets.xcassets */; };
+		2759A28E233AC02200ECB3F1 /* CentralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2759A28D233AC02200ECB3F1 /* CentralManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2759A259233AB79E00ECB3F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2759A24D233AB79E00ECB3F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2759A256233AB79E00ECB3F1;
+			remoteInfo = "BlueGarage WatchKit App";
+		};
+		2759A268233AB79F00ECB3F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2759A24D233AB79E00ECB3F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2759A265233AB79F00ECB3F1;
+			remoteInfo = "BlueGarage WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2759A283233AB7A000ECB3F1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2759A267233AB79F00ECB3F1 /* BlueGarage WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2759A287233AB7A000ECB3F1 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				2759A258233AB79E00ECB3F1 /* BlueGarage WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2759A253233AB79E00ECB3F1 /* BlueGarage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueGarage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2759A257233AB79E00ECB3F1 /* BlueGarage WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BlueGarage WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2759A25D233AB79E00ECB3F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		2759A25F233AB79F00ECB3F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2759A261233AB79F00ECB3F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2759A266233AB79F00ECB3F1 /* BlueGarage WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BlueGarage WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2759A26B233AB79F00ECB3F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2759A26D233AB79F00ECB3F1 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		2759A26F233AB79F00ECB3F1 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		2759A271233AB79F00ECB3F1 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		2759A273233AB79F00ECB3F1 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		2759A275233AB79F00ECB3F1 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		2759A277233AB7A000ECB3F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2759A27A233AB7A000ECB3F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2759A27C233AB7A000ECB3F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2759A27D233AB7A000ECB3F1 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		2759A28B233AC02200ECB3F1 /* BlueGarage-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BlueGarage-Bridging-Header.h"; sourceTree = "<group>"; };
+		2759A28C233AC02200ECB3F1 /* BlueGarage WatchKit App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BlueGarage WatchKit App-Bridging-Header.h"; sourceTree = "<group>"; };
+		2759A28D233AC02200ECB3F1 /* CentralManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentralManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2759A263233AB79F00ECB3F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2759A24C233AB79E00ECB3F1 = {
+			isa = PBXGroup;
+			children = (
+				2759A25B233AB79E00ECB3F1 /* BlueGarage WatchKit App */,
+				2759A26A233AB79F00ECB3F1 /* BlueGarage WatchKit Extension */,
+				2759A254233AB79E00ECB3F1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2759A254233AB79E00ECB3F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2759A253233AB79E00ECB3F1 /* BlueGarage.app */,
+				2759A257233AB79E00ECB3F1 /* BlueGarage WatchKit App.app */,
+				2759A266233AB79F00ECB3F1 /* BlueGarage WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2759A25B233AB79E00ECB3F1 /* BlueGarage WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				2759A25C233AB79E00ECB3F1 /* Interface.storyboard */,
+				2759A25F233AB79F00ECB3F1 /* Assets.xcassets */,
+				2759A261233AB79F00ECB3F1 /* Info.plist */,
+			);
+			path = "BlueGarage WatchKit App";
+			sourceTree = "<group>";
+		};
+		2759A26A233AB79F00ECB3F1 /* BlueGarage WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2759A26B233AB79F00ECB3F1 /* ContentView.swift */,
+				2759A26D233AB79F00ECB3F1 /* HostingController.swift */,
+				2759A26F233AB79F00ECB3F1 /* ExtensionDelegate.swift */,
+				2759A271233AB79F00ECB3F1 /* NotificationController.swift */,
+				2759A273233AB79F00ECB3F1 /* NotificationView.swift */,
+				2759A275233AB79F00ECB3F1 /* ComplicationController.swift */,
+				2759A277233AB7A000ECB3F1 /* Assets.xcassets */,
+				2759A27C233AB7A000ECB3F1 /* Info.plist */,
+				2759A27D233AB7A000ECB3F1 /* PushNotificationPayload.apns */,
+				2759A279233AB7A000ECB3F1 /* Preview Content */,
+				2759A28D233AC02200ECB3F1 /* CentralManager.swift */,
+				2759A28B233AC02200ECB3F1 /* BlueGarage-Bridging-Header.h */,
+				2759A28C233AC02200ECB3F1 /* BlueGarage WatchKit App-Bridging-Header.h */,
+			);
+			path = "BlueGarage WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		2759A279233AB7A000ECB3F1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2759A27A233AB7A000ECB3F1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2759A252233AB79E00ECB3F1 /* BlueGarage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2759A288233AB7A000ECB3F1 /* Build configuration list for PBXNativeTarget "BlueGarage" */;
+			buildPhases = (
+				2759A251233AB79E00ECB3F1 /* Resources */,
+				2759A287233AB7A000ECB3F1 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2759A25A233AB79E00ECB3F1 /* PBXTargetDependency */,
+			);
+			name = BlueGarage;
+			productName = BlueGarage;
+			productReference = 2759A253233AB79E00ECB3F1 /* BlueGarage.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		2759A256233AB79E00ECB3F1 /* BlueGarage WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2759A284233AB7A000ECB3F1 /* Build configuration list for PBXNativeTarget "BlueGarage WatchKit App" */;
+			buildPhases = (
+				2759A255233AB79E00ECB3F1 /* Resources */,
+				2759A283233AB7A000ECB3F1 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2759A269233AB79F00ECB3F1 /* PBXTargetDependency */,
+			);
+			name = "BlueGarage WatchKit App";
+			productName = "BlueGarage WatchKit App";
+			productReference = 2759A257233AB79E00ECB3F1 /* BlueGarage WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		2759A265233AB79F00ECB3F1 /* BlueGarage WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2759A280233AB7A000ECB3F1 /* Build configuration list for PBXNativeTarget "BlueGarage WatchKit Extension" */;
+			buildPhases = (
+				2759A262233AB79F00ECB3F1 /* Sources */,
+				2759A263233AB79F00ECB3F1 /* Frameworks */,
+				2759A264233AB79F00ECB3F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BlueGarage WatchKit Extension";
+			productName = "BlueGarage WatchKit Extension";
+			productReference = 2759A266233AB79F00ECB3F1 /* BlueGarage WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2759A24D233AB79E00ECB3F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Sarang Borude";
+				TargetAttributes = {
+					2759A252233AB79E00ECB3F1 = {
+						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
+					};
+					2759A256233AB79E00ECB3F1 = {
+						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
+					};
+					2759A265233AB79F00ECB3F1 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 2759A250233AB79E00ECB3F1 /* Build configuration list for PBXProject "BlueGarage" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2759A24C233AB79E00ECB3F1;
+			productRefGroup = 2759A254233AB79E00ECB3F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2759A252233AB79E00ECB3F1 /* BlueGarage */,
+				2759A256233AB79E00ECB3F1 /* BlueGarage WatchKit App */,
+				2759A265233AB79F00ECB3F1 /* BlueGarage WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2759A251233AB79E00ECB3F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2759A255233AB79E00ECB3F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2759A260233AB79F00ECB3F1 /* Assets.xcassets in Resources */,
+				2759A25E233AB79E00ECB3F1 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2759A264233AB79F00ECB3F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2759A27B233AB7A000ECB3F1 /* Preview Assets.xcassets in Resources */,
+				2759A278233AB7A000ECB3F1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2759A262233AB79F00ECB3F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2759A26E233AB79F00ECB3F1 /* HostingController.swift in Sources */,
+				2759A26C233AB79F00ECB3F1 /* ContentView.swift in Sources */,
+				2759A272233AB79F00ECB3F1 /* NotificationController.swift in Sources */,
+				2759A270233AB79F00ECB3F1 /* ExtensionDelegate.swift in Sources */,
+				2759A274233AB79F00ECB3F1 /* NotificationView.swift in Sources */,
+				2759A276233AB79F00ECB3F1 /* ComplicationController.swift in Sources */,
+				2759A28E233AC02200ECB3F1 /* CentralManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2759A25A233AB79E00ECB3F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2759A256233AB79E00ECB3F1 /* BlueGarage WatchKit App */;
+			targetProxy = 2759A259233AB79E00ECB3F1 /* PBXContainerItemProxy */;
+		};
+		2759A269233AB79F00ECB3F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2759A265233AB79F00ECB3F1 /* BlueGarage WatchKit Extension */;
+			targetProxy = 2759A268233AB79F00ECB3F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2759A25C233AB79E00ECB3F1 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2759A25D233AB79E00ECB3F1 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2759A27E233AB7A000ECB3F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2759A27F233AB7A000ECB3F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2759A281233AB7A000ECB3F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BlueGarage WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = JV9PMB7QFN;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "BlueGarage WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.doomdave.com.BlueGarage.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		2759A282233AB7A000ECB3F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BlueGarage WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = JV9PMB7QFN;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "BlueGarage WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.doomdave.com.BlueGarage.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		2759A285233AB7A000ECB3F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JV9PMB7QFN;
+				IBSC_MODULE = BlueGarage_WatchKit_Extension;
+				INFOPLIST_FILE = "BlueGarage WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.doomdave.com.BlueGarage.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BlueGarage WatchKit Extension/BlueGarage WatchKit App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		2759A286233AB7A000ECB3F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JV9PMB7QFN;
+				IBSC_MODULE = BlueGarage_WatchKit_Extension;
+				INFOPLIST_FILE = "BlueGarage WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.doomdave.com.BlueGarage.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BlueGarage WatchKit Extension/BlueGarage WatchKit App-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		2759A289233AB7A000ECB3F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JV9PMB7QFN;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.doomdave.com.BlueGarage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BlueGarage WatchKit Extension/BlueGarage-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2759A28A233AB7A000ECB3F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JV9PMB7QFN;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.doomdave.com.BlueGarage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BlueGarage WatchKit Extension/BlueGarage-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2759A250233AB79E00ECB3F1 /* Build configuration list for PBXProject "BlueGarage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2759A27E233AB7A000ECB3F1 /* Debug */,
+				2759A27F233AB7A000ECB3F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2759A280233AB7A000ECB3F1 /* Build configuration list for PBXNativeTarget "BlueGarage WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2759A281233AB7A000ECB3F1 /* Debug */,
+				2759A282233AB7A000ECB3F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2759A284233AB7A000ECB3F1 /* Build configuration list for PBXNativeTarget "BlueGarage WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2759A285233AB7A000ECB3F1 /* Debug */,
+				2759A286233AB7A000ECB3F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2759A288233AB7A000ECB3F1 /* Build configuration list for PBXNativeTarget "BlueGarage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2759A289233AB7A000ECB3F1 /* Debug */,
+				2759A28A233AB7A000ECB3F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2759A24D233AB79E00ECB3F1 /* Project object */;
+}
