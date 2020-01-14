@@ -4,6 +4,8 @@ Prototype for a standalone (No phone needed) garage door opener app for apple wa
 
 The watch connects to the adafruit bluefruit feather and controls the garage door using a relay
 
+The app code is configured to automatically connect to the garage door bluetooth controller, so need to pair. In a production scenario, there will be one time pairing that will happen. In the prototype the focus is more on the interaction rather than on-boarding. 
+
 https://www.youtube.com/watch?v=cNAqWz_6Ya4&feature=youtu.be
 
 Hardware required.
